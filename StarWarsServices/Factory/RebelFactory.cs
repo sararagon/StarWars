@@ -8,7 +8,7 @@ namespace StarWarsServices.Factory
 {
     public class RebelFactory : ICitizenFactory
     {
-        private readonly RebelFactory RebelFactoryInstance = new RebelFactory();
+        private readonly static RebelFactory _rebelFactoryInstance = new RebelFactory();
         
 
         private RebelFactory()
@@ -16,9 +16,13 @@ namespace StarWarsServices.Factory
         }
 
 
-        public RebelFactory Instance()
+        public static RebelFactory Instance
         {
-            return RebelFactoryInstance;
+            get
+            {
+
+                return _rebelFactoryInstance;
+            }
         }
 
 

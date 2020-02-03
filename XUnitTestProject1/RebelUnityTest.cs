@@ -14,17 +14,12 @@ namespace XUnitTestProject1
         private readonly string TestPlanet = "Planet";
         private readonly string NoValidTestPlanet = "No Valid Planet";
 
-        private readonly RebelFactory factory;
-
-        public RebelUnitTest(RebelFactory fact)
-        {
-            this.factory = fact;
-        }
+       
 
         [Fact]
         public void CreateCitizenTest()
         {
-            Assert.NotNull(factory.CreateCitizen(TestName, TestPlanet));
+            Assert.NotNull(RebelFactory.Instance.CreateCitizen(TestName, TestPlanet));
         }
 
         [Fact]
@@ -33,7 +28,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                var rebel = (factory.CreateCitizen(NoValidTestName, TestPlanet));
+                var rebel = (RebelFactory.Instance.CreateCitizen(NoValidTestName, TestPlanet));
             }
             catch (CreationRebelException)
             {
@@ -48,7 +43,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                var rebel = factory.CreateCitizen(TestName, NoValidTestPlanet);
+                var rebel = RebelFactory.Instance.CreateCitizen(TestName, NoValidTestPlanet);
             }
             catch (CreationRebelException)
             {
@@ -63,7 +58,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                StarWarsModels.Citizens.ICitizen rebel = (factory.CreateCitizen(NoValidTestName, NoValidTestPlanet));
+                StarWarsModels.Citizens.ICitizen rebel = (RebelFactory.Instance.CreateCitizen(NoValidTestName, NoValidTestPlanet));
             }
             catch (CreationRebelException)
             {
@@ -79,7 +74,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                StarWarsModels.Citizens.ICitizen rebel = (factory.CreateCitizen(string.Empty, TestPlanet));
+                StarWarsModels.Citizens.ICitizen rebel = (RebelFactory.Instance.CreateCitizen(string.Empty, TestPlanet));
             }
             catch (CreationRebelException)
             {
@@ -95,7 +90,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                StarWarsModels.Citizens.ICitizen rebel = (factory.CreateCitizen(TestName, string.Empty));
+                StarWarsModels.Citizens.ICitizen rebel = (RebelFactory.Instance.CreateCitizen(TestName, string.Empty));
             }
             catch (CreationRebelException)
             {
@@ -111,7 +106,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                StarWarsModels.Citizens.ICitizen rebel = (factory.CreateCitizen(string.Empty, string.Empty));
+                StarWarsModels.Citizens.ICitizen rebel = (RebelFactory.Instance.CreateCitizen(string.Empty, string.Empty));
             }
             catch (CreationRebelException)
             {

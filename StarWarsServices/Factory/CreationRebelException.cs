@@ -8,18 +8,8 @@ namespace StarWarsServices.Factory
     {
         public CreationRebelException()
         {
+
         }
 
-        public CreationRebelException(string message) : base(message)
-        {
-        }
-
-        public CreationRebelException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
-
-        protected CreationRebelException(SerializationInfo info, StreamingContext context) : base(info, context)
-        {
-        }
     }
 }
