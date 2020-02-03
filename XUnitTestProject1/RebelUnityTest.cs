@@ -1,4 +1,4 @@
-using StarWarsApi;
+
 using StarWarsServices.Factory;
 using Xunit;
 
@@ -16,9 +16,9 @@ namespace XUnitTestProject1
 
         private readonly RebelFactory factory;
 
-        public RebelUnitTest(RebelFactory factory)
+        public RebelUnitTest(RebelFactory fact)
         {
-            this.factory = factory;
+            this.factory = fact;
         }
 
         [Fact]

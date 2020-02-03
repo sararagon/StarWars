@@ -8,28 +8,36 @@ namespace StarWarsServices.Factory
 {
     public class RebelFactory : ICitizenFactory
     {
-        private NameSpecification n;
+        private readonly RebelFactory RebelFactoryInstance = new RebelFactory();
+        
 
-        public RebelFactory(NameSpecification nS)
+        private RebelFactory()
         {
-            n = nS;
+        }
+
+
+        public RebelFactory Instance()
+        {
+            return RebelFactoryInstance;
         }
 
 
         public ICitizen CreateCitizen(string name, string planet)
         {
-            
-
-            if (n.IsSatisfiedBy(name) && n.IsSatisfiedBy(planet))
+            var n = new NameSpecification();
+            if(n.IsSatisfiedBy(name) && n.IsSatisfiedBy(planet))
             {
-                return new Rebel() { Name = name, Planet = planet, RegistrationionDate = DateTime.Today};
+                return new Rebel() { Name = name, Planet = planet, RegistrationionDate = DateTime.Today };
             }
             else
             {
                 throw new CreationRebelException();
             }
         }
+    }
+
+        
 
 
     }
-}
+

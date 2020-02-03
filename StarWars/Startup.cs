@@ -28,7 +28,6 @@ namespace StarWars
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<StarWarsServices.Factory.RebelFactory>();
-            services.AddSingleton<StarWarsServices.Specification.NameSpecification>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
