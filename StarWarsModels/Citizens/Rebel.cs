@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StarWarsModels
+namespace StarWarsModels.Citizens
 {
     public class Rebel : ICitizen
     {

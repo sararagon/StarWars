@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsApi", "StarWars\Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsModels", "StarWarsModels\StarWarsModels.csproj", "{1BAFD344-6410-4AB1-B5D3-531EBB14B97C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsServices", "StarWarsServices\StarWarsServices.csproj", "{21852E59-2EEB-4661-8B03-9A822372C328}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1BAFD344-6410-4AB1-B5D3-531EBB14B97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BAFD344-6410-4AB1-B5D3-531EBB14B97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BAFD344-6410-4AB1-B5D3-531EBB14B97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21852E59-2EEB-4661-8B03-9A822372C328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21852E59-2EEB-4661-8B03-9A822372C328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21852E59-2EEB-4661-8B03-9A822372C328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21852E59-2EEB-4661-8B03-9A822372C328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
