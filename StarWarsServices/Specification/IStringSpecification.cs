@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StarWarsServices.Specification
 {
-    interface IStringSpecification
+    public interface IStringSpecification
     {
         bool IsSatisfiedBy(string s);
     }

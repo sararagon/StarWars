@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using StarWarsModels;
+using StarWarsModels.Citizens;
 
 namespace StarWarsServices.Factory
 {
-    class ICitizenFactory
+    public interface ICitizenFactory
     {
+       ICitizen CreateCitizen(string name, string planet);
 
     }
 }

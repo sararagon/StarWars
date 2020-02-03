@@ -11,7 +11,7 @@ namespace StarWarsServices.Specification
         /// <returns></returns>
         public Boolean IsSatisfiedBy(DateTime d)
         {
-            return (DateTime.Compare(d, DateTime.Today) <= 0);
+            return (d != null && DateTime.Compare(d, DateTime.Today) <= 0);
         }
     }
 }

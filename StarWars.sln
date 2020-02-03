@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsApi", "StarWars\StarWarsApi.csproj", "{4C103296-5AE6-402E-9FE1-250D80AE5B07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsApi", "StarWars\StarWarsApi.csproj", "{4C103296-5AE6-402E-9FE1-250D80AE5B07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsModels", "StarWarsModels\StarWarsModels.csproj", "{1BAFD344-6410-4AB1-B5D3-531EBB14B97C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsModels", "StarWarsModels\StarWarsModels.csproj", "{1BAFD344-6410-4AB1-B5D3-531EBB14B97C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsServices", "StarWarsServices\StarWarsServices.csproj", "{21852E59-2EEB-4661-8B03-9A822372C328}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsServices", "StarWarsServices\StarWarsServices.csproj", "{21852E59-2EEB-4661-8B03-9A822372C328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{353A238A-8F85-41F9-9F58-F3E299EB9248}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{21852E59-2EEB-4661-8B03-9A822372C328}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21852E59-2EEB-4661-8B03-9A822372C328}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21852E59-2EEB-4661-8B03-9A822372C328}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

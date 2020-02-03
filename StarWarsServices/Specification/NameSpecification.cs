@@ -1,6 +1,6 @@
 ﻿namespace StarWarsServices.Specification
 {
-    class NameSpecification : IStringSpecification
+    public class NameSpecification : IStringSpecification
     {
         /// <summary>
         /// Check if the Name contains only a word.
@@ -9,7 +9,7 @@
         /// <returns></returns>
         public bool IsSatisfiedBy(string s)
         {
-            return (s.Split(' ').Length <= 1);
+            return (s != null && s!= string.Empty && s.Split(' ').Length <= 1);
         }
 
     }
