@@ -1,15 +1,12 @@
-﻿namespace StarWarsServices.Specification
+﻿using StarWarsModels.Citizens;
+
+namespace StarWarsServices.Specification
 {
-    public class NameSpecification : IStringSpecification
+    public class NameSpecification : IStringsSpecification
     {
-        /// <summary>
-        /// Check if the Name contains only a word.
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
-        public bool IsSatisfiedBy(string s)
+        public bool IsSatisfiedBy(ICitizen citizen)
         {
-            return (s != null && s!= string.Empty && s.Split(' ').Length <= 1);
+            return (!string.IsNullOrEmpty(citizen.Name) && !string.IsNullOrEmpty(citizen.Planet));
         }
 
     }

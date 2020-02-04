@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsModels", "StarWarsM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarWarsServices", "StarWarsServices\StarWarsServices.csproj", "{21852E59-2EEB-4661-8B03-9A822372C328}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{353A238A-8F85-41F9-9F58-F3E299EB9248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{353A238A-8F85-41F9-9F58-F3E299EB9248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarWarsCrossCutting", "StarWarsCrossCutting\StarWarsCrossCutting.csproj", "{04FB7550-EE05-4780-B89D-C3C2FD0AFAD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{353A238A-8F85-41F9-9F58-F3E299EB9248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04FB7550-EE05-4780-B89D-C3C2FD0AFAD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04FB7550-EE05-4780-B89D-C3C2FD0AFAD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04FB7550-EE05-4780-B89D-C3C2FD0AFAD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04FB7550-EE05-4780-B89D-C3C2FD0AFAD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StarWarsCrossCutting\StarWarsCrossCutting.csproj" />
     <ProjectReference Include="..\StarWarsModels\StarWarsModels.csproj" />
   </ItemGroup>
 

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using StarWarsModels.Citizens;
 
 namespace StarWarsServices.Specification
 {
-    public interface IStringSpecification
+    public interface IStringsSpecification
     {
-        bool IsSatisfiedBy(string s);
+        bool IsSatisfiedBy(ICitizen citizen);
     }
 }
