@@ -2,7 +2,7 @@
 
 namespace StarWarsServices.Specification
 {
-    public class NameSpecification : IStringsSpecification
+    public class RebelSpecification : IRebelSpecification
     {
         public bool IsSatisfiedBy(ICitizen citizen)
         {

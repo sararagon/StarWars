@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StarWarsServices.Factory;
+using StarWarsServices.Specification;
 
 namespace StarWarsApi
 {
@@ -18,7 +20,10 @@ namespace StarWarsApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<StarWarsServices.Factory.RebelFactory>();
+            services.AddSingleton<RebelFactory>();
+            services.AddScoped<IRebelSpecification, RebelSpecification>();
+            services.AddScoped<ICitizenFactory, RebelFactory>();
+            services.AddScoped<ICitizenListFactory, CitizenListFactory>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

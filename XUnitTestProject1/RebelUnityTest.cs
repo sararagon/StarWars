@@ -1,4 +1,5 @@
 
+using StarWarsCrossCutting.Exceptions;
 using StarWarsServices.Factory;
 using Xunit;
 
@@ -28,7 +29,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                var rebel = (RebelFactory.Instance.CreateCitizen(NoValidTestName, TestPlanet));
+                RebelFactory.Instance.CreateCitizen(NoValidTestName, TestPlanet);
             }
             catch (CreationRebelException)
             {
@@ -43,7 +44,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                var rebel = RebelFactory.Instance.CreateCitizen(TestName, NoValidTestPlanet);
+                 RebelFactory.Instance.CreateCitizen(TestName, NoValidTestPlanet);
             }
             catch (CreationRebelException)
             {
@@ -58,7 +59,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                StarWarsModels.Citizens.ICitizen rebel = (RebelFactory.Instance.CreateCitizen(NoValidTestName, NoValidTestPlanet));
+                RebelFactory.Instance.CreateCitizen(NoValidTestName, NoValidTestPlanet);
             }
             catch (CreationRebelException)
             {
@@ -74,7 +75,7 @@ namespace XUnitTestProject1
             bool x = false;
             try
             {
-                StarWarsModels.Citizens.ICitizen rebel = (RebelFactory.Instance.CreateCitizen(string.Empty, TestPlanet));
+               RebelFactory.Instance.CreateCitizen(string.Empty, TestPlanet);
             }
             catch (CreationRebelException)
             {

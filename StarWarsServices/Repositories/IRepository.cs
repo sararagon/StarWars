@@ -1,13 +1,11 @@
-﻿using  System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using StarWarsModels.Citizens;
 
 
 namespace StarWarsServices.Repositories
 {
-    interface IRepository
+    public interface IRepository
     {
-        List<ICitizen> ReadCitizens(string infoString);
+        List<ICitizen> ReadCitizens();
     }
 }

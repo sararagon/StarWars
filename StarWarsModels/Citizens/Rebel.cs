@@ -6,7 +6,7 @@ namespace StarWarsModels.Citizens
     {
         public string Name { get; set; }
         public string Planet { get; set; }
-        public DateTime RegistrationionDate { get; set; }
+        public DateTime RegistrationDate { get; set; }
 
     }
 }

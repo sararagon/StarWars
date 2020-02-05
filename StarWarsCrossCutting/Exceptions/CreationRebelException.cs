@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Runtime.Serialization;
 
-namespace StarWarsServices.Factory
+namespace StarWarsCrossCutting.Exceptions
 {
     [Serializable]
   public class CreationRebelException : Exception
-    {
-        public CreationRebelException()
+  {
+      
+        public CreationRebelException(string message) : base(message)
         {
-
+           
         }
-
+       
     }
 }

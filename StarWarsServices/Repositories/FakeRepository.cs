@@ -1,13 +1,11 @@
-﻿using System;
+﻿using StarWarsModels.Citizens;
 using System.Collections.Generic;
-using System.Text;
-using StarWarsModels.Citizens;
 
 namespace StarWarsServices.Repositories
 {
-    class FakeRepository : IRepository
+    public class FakeRepository : IRepository
     {
-        private readonly List<ICitizen> CitizenList = new List<ICitizen>
+        private readonly List<ICitizen> _citizenList = new List<ICitizen>
         {
             new Rebel()
             {
@@ -21,9 +19,9 @@ namespace StarWarsServices.Repositories
             }
         };
            
-        public List<ICitizen> ReadCitizens(string infoString)
+        public List<ICitizen> ReadCitizens()
         {
-            return CitizenList;
+            return _citizenList;
         }
     }
 }
