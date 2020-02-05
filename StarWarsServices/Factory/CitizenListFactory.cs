@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace StarWarsServices.Factory
 {
-    internal class CitizenListFactory : ICitizenListFactory
+    public class CitizenListFactory : ICitizenListFactory
     {
         private readonly List<ICitizen> _listCitizen;
         private readonly ICitizenFactory _citizenFactory;

@@ -3,7 +3,7 @@ using StarWarsModels.Citizens;
 
 namespace StarWarsServices.Factory
 {
-    interface ICitizenListFactory
+    public interface ICitizenListFactory
     {
         List<ICitizen> CreateCitizenList(string list);
     }

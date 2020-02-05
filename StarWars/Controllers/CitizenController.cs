@@ -17,11 +17,5 @@ namespace StarWarsApi.Controllers
         {
             return View();
         }
-
-        private string CreateCitizensFromRepository()
-        {
-            var inputDatas = _repository.ReadCitizens();
-            var CitiezenList = ICitizenListFactory
-        }
     }
 }

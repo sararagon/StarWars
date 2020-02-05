@@ -7,13 +7,13 @@ namespace StarWarsServices.Factory
 {
     public class RebelFactory : ICitizenFactory
     {
-/*
+
         private RebelFactory(IRebelSpecification r, IDateSpecification d)
         {
             _r = r;
             _d = d;
         }
-*/
+
 
         public RebelFactory()
         {
